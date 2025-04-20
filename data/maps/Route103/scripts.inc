@@ -293,7 +293,7 @@ Route103_Text_MayRoute103Pokemon:
 	.string "on ROUTE 103 include…$"
 
 Route103_Text_MayLetsBattle:
-	.string "Oh, hi, {PLAYER}{KUN}!\p"
+	.string "Heyyy, {PLAYER}{KUN}!\p"
 	.string "…Oh, I see, my dad gave you\n"
 	.string "a POKéMON as a gift.\p"
 	.string "Since we're here, let's have a quick\n"
@@ -313,7 +313,7 @@ Route103_Text_MayTimeToHeadBack:
 	.string "You might be able to befriend any\n"
 	.string "kind of POKéMON easily.\p"
 	.string "Well, it's time to head back to\n"
-	.string "the LAB.$"
+	.string "the LAB, bestie.$"
 
 Route103_Text_BrendanRoute103Pokemon:
 	.string "BRENDAN: Okay, so it's this one and\n"
