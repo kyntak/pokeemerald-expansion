@@ -1198,7 +1198,7 @@ static void Cmd_attackcanceler(void)
 
     if (AbilityBattleEffects(ABILITYEFFECT_MOVES_BLOCK, gBattlerTarget, 0, 0, 0))
         return;
-    if (gMovesInfo[gCurrentMove].effect == EFFECT_PARALYZE && AbilityBattleEffects(ABILITYEFFECT_ABSORBING, gBattlerTarget, 0, 0, gCurrentMove))
+    if (GetMoveEffect(gCurrentMove) == EFFECT_PARALYZE && AbilityBattleEffects(ABILITYEFFECT_ABSORBING, gBattlerTarget, 0, 0, gCurrentMove))
         return;
     if (IsMovePowderBlocked(gBattlerAttacker, gBattlerTarget, gCurrentMove))
         return;
@@ -2423,7 +2423,7 @@ static void Cmd_attackanimation(void)
         }
 
         // handle special move animations
-        if (gMovesInfo[gCurrentMove].effect == EFFECT_EXPANDING_FORCE && moveTarget & MOVE_TARGET_BOTH && CountAliveMonsInBattle(BATTLE_ALIVE_SIDE, BATTLE_OPPOSITE(gBattlerAttacker) > 1))
+        if (GetMoveEffect(gCurrentMove) == EFFECT_EXPANDING_FORCE && moveTarget & MOVE_TARGET_BOTH && CountAliveMonsInBattle(BATTLE_ALIVE_SIDE, BATTLE_OPPOSITE(gBattlerAttacker) > 1))
             gBattleScripting.animTurn = 1;
 
         if (!(moveResultFlags & MOVE_RESULT_NO_EFFECT))
@@ -6475,7 +6475,7 @@ static void Cmd_moveend(void)
                 gBattleScripting.moveendState++;
                 break;
             }
-            else if (gMovesInfo[gCurrentMove].effect == EFFECT_RECOIL_IF_MISS
+            else if (GetMoveEffect(gCurrentMove) == EFFECT_RECOIL_IF_MISS
                   && (!IsBattlerTurnDamaged(gBattlerTarget) || gBattleStruct->moveResultFlags[gBattlerTarget] & MOVE_RESULT_NO_EFFECT)
                   && !gBattleStruct->noTargetPresent
                   && IsBattlerAlive(gBattlerAttacker))
@@ -6708,6 +6708,7 @@ static void Cmd_moveend(void)
              && IsBattlerTurnDamaged(gBattlerTarget)
              && IsBattlerAlive(gBattlerTarget)
              && IsBattlerAlive(gBattlerAttacker)
+             && !(gStatuses3[BATTLE_PARTNER(gBattlerTarget)] & STATUS3_COMMANDER)
              && gSpecialStatuses[gBattlerAttacker].parentalBondState != PARENTAL_BOND_1ST_HIT)
             {
                 u32 targetAbility = GetBattlerAbility(gBattlerTarget);
@@ -6841,12 +6842,13 @@ static void Cmd_moveend(void)
                 }
             }
 
-            if (gHitMarker & HITMARKER_SWAP_ATTACKER_TARGET)
+            // After swapattackerwithtarget is used for snatch the correct battlers have to be restored so data is stored correctly
+            if (gBattleStruct->snatchedMoveIsUsed)
             {
-                u8 temp;
+                u32 temp;
                 SWAP(gBattlerAttacker, gBattlerTarget, temp);
-                gHitMarker &= ~HITMARKER_SWAP_ATTACKER_TARGET;
             }
+
             if (!gSpecialStatuses[gBattlerAttacker].dancerUsedMove)
             {
                 gDisableStructs[gBattlerAttacker].usedMoves |= 1u << gCurrMovePos;
@@ -8826,14 +8828,8 @@ static void Cmd_swapattackerwithtarget(void)
 {
     CMD_ARGS();
 
-    u8 temp;
+    u32 temp;
     SWAP(gBattlerAttacker, gBattlerTarget, temp);
-
-    if (gHitMarker & HITMARKER_SWAP_ATTACKER_TARGET)
-        gHitMarker &= ~HITMARKER_SWAP_ATTACKER_TARGET;
-    else
-        gHitMarker |= HITMARKER_SWAP_ATTACKER_TARGET;
-
     gBattlescriptCurrInstr = cmd->nextInstr;
 }
 
