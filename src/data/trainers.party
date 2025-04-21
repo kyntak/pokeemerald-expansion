@@ -3176,7 +3176,7 @@ Double Battle: No
 AI: Check Bad Move
 
 Machop
-Level: 15
+Level: 13
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 === TRAINER_HITOSHI ===
@@ -4802,7 +4802,15 @@ Items: Potion / Potion
 Double Battle: No
 AI: Basic Trainer
 
-Anorith 
+Tyrunt @ Hard Stone
+Level: 12
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Ancient Power
+- Tackle
+- Charm
+- Rock Tomb
+
+Anorith @ Oran Berry
 Level: 12
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Metal Claw
@@ -4810,7 +4818,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Fury Cutter
 - Rock Tomb
 
-Lileep 
+Lileep @ Big Root
 Level: 12
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Wrap
@@ -4836,28 +4844,28 @@ Items: Super Potion / Super Potion
 Double Battle: No
 AI: Basic Trainer
 
-Farfetch'd-Galar
+Machop
 Level: 16
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Peck
-- Sand Attack
-- Rock Smash
+- Karate Chop
+- Low Kick
+- Seismic Toss
+- Bulk Up
+
+Meditite
+Level: 16
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Focus Punch
+- Light Screen
+- Reflect
 - Bulk Up
 
 Makuhita @ Sitrus Berry
-Level: 16
+Level: 19
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 - Arm Thrust
 - Vital Throw
 - Reversal
-- Bulk Up
-
-Combusken @ Sitrus Berry
-Level: 19
-IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
-- Double Kick
-- Flame Charge
-- Quick Attack
 - Bulk Up
 
 === TRAINER_WATTSON_1 ===
@@ -6014,9 +6022,9 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Rattata
-Level: 12
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Machop
+Level: 9
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_BEN ===
 Name: BEN
@@ -6376,15 +6384,15 @@ Double Battle: No
 AI: Check Bad Move
 
 Magikarp
-Level: 15
+Level: 10
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Tentacool
-Level: 14
+Level: 7
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Staryu
-Level: 13
+Magikarp
+Level: 10
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_NED ===
@@ -6397,12 +6405,8 @@ Double Battle: No
 AI: Check Bad Move
 
 Tentacool
-Level: 17
+Level: 11
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
-- Water Pulse
-- Supersonic
-- Acid
-- Screech
 
 === TRAINER_DALE ===
 Name: DALE
@@ -7848,8 +7852,8 @@ Music: Intense
 Double Battle: No
 AI: Check Bad Move
 
-Mankey
-Level: 16
+Meditite
+Level: 13
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 === TRAINER_LAURA ===
@@ -7862,7 +7866,7 @@ Double Battle: No
 AI: Check Bad Move
 
 Meditite
-Level: 15
+Level: 13
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 
 === TRAINER_CYNDY_1 ===
@@ -10586,7 +10590,7 @@ Double Battle: No
 AI: Check Bad Move
 
 Machop
-Level: 15
+Level: 13
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_LILITH ===
@@ -10612,7 +10616,7 @@ Double Battle: No
 AI: Check Bad Move
 
 Makuhita
-Level: 14
+Level: 13
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 
 === TRAINER_SYLVIA ===
@@ -11004,11 +11008,7 @@ Wingull
 Level: 13
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
-Torkoal
-Level: 13
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
-
-Sunkern
+Treecko
 Level: 15
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
@@ -11292,7 +11292,7 @@ AI: Check Bad Move
 
 Spinarak
 Level: 5
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 1 Spe
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Wurmple
 Level: 5
@@ -14153,15 +14153,11 @@ Music: Female
 Double Battle: No
 AI: Basic Trainer
 
-Wingull
+Lotad
 Level: 13
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
-Torkoal
-Level: 13
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
-
-Sunkern
+Torchic
 Level: 15
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
@@ -14174,15 +14170,11 @@ Music: Female
 Double Battle: No
 AI: Basic Trainer
 
-Wingull
-Level: 13
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
-
 Torkoal
 Level: 13
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
-Sunkern
+Mudkip
 Level: 15
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
