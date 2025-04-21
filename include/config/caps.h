@@ -11,8 +11,8 @@
 #define LEVEL_CAP_VARIABLE              2 // Level cap is chosen according to the contents of the event variable specified by B_LEVEL_CAP_VARIABLE
 
 // Level Cap Configs
-#define B_EXP_CAP_TYPE                  EXP_CAP_NONE   // [EXP_CAP_NONE, EXP_CAP_HARD, EXP_CAP_SOFT] choose the type of level cap to apply
-#define B_LEVEL_CAP_TYPE                LEVEL_CAP_NONE // [LEVEL_CAP_NONE, LEVEL_CAP_FLAG_LIST, LEVEL_CAP_VARIABLE] choose the method to derive the level cap
+#define B_EXP_CAP_TYPE                  EXP_CAP_SOFT   // [EXP_CAP_NONE, EXP_CAP_HARD, EXP_CAP_SOFT] choose the type of level cap to apply
+#define B_LEVEL_CAP_TYPE                LEVEL_CAP_FLAG_LIST // [LEVEL_CAP_NONE, LEVEL_CAP_FLAG_LIST, LEVEL_CAP_VARIABLE] choose the method to derive the level cap
 #define B_LEVEL_CAP_VARIABLE            0 // event variable used to derive level cap if B_LEVEL_CAP_TYPE is set to LEVEL_CAP_VARIABLE
 
 #define B_RARE_CANDY_CAP                FALSE // If set to true, Rare Candies can't be used to go over the level cap
@@ -31,3 +31,14 @@
 #define B_EV_ITEMS_CAP                  FALSE // If set to true, EV-boosting items can't be used to go over the EV cap
 
 #endif /* GUARD_CONFIG_CAPS_H */
+
+
+
+
+
+//     FLAG_DEFEATED_RIVAL_ROUTE103, FLAG_BADGE01_GET, FLAG_DEFEATED_RIVAL_RUSTBORO, FLAG_BADGE02_GET, 
+// FLAG_DEFEATED_RIVAL_ROUTE110, FLAG_DEFEATED_WALLY_MAUVILLE, FLAG_BADGE03_GET, FLAG_DEFEATED_EVIL_TEAM_MT_CHIMNEY, 
+// FLAG_BADGE04_GET, FLAG_BADGE05_GET, FLAG_RECEIVED_HM_FLY, FLAG_BADGE06_GET, 
+// FLAG_GROUDON_AWAKENED_MAGMA_HIDEOUT, FLAG_MET_RIVAL_LILYCOVE, FLAG_TEAM_AQUA_ESCAPED_IN_SUBMARINE, FLAG_BADGE07_GET,
+// FLAG_DEFEATED_MAGMA_SPACE_CENTER, FLAG_KYOGRE_ESCAPED_SEAFLOOR_CAVERN, FLAG_BADGE08_GET, FLAG_DEFEATED_WALLY_VICTORY_ROAD
+// FLAG_DEFEATED_CHAMPION, FLAG_DEFEATED_METEOR_FALLS_STEVEN

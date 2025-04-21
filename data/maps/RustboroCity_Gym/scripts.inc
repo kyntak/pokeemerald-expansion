@@ -178,9 +178,9 @@ RustboroCity_Gym_Text_MarcPostBattle:
 RustboroCity_Gym_Text_RoxanneIntro:
 	.string "Hello, I am ROXANNE, the RUSTBORO\n"
 	.string "POKéMON GYM LEADER.\p"
-	.string "I became a GYM LEADER so that I might\n"
-	.string "apply what I learned at the POKéMON\l"
-	.string "TRAINER'S SCHOOL in battle.\p"
+	.string "My favourite subject at university was\n"
+	.string "fossils. There is so much to be learned\l"
+	.string "from fossil POKéMON.\p"
 	.string "Would you kindly demonstrate how you\n"
 	.string "battle, and with which POKéMON?$"
 
