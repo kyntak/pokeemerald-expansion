@@ -524,23 +524,23 @@
 #define TRAINER_EDWIN_5                     518
 #define TRAINER_WALLY_VR_1                  519
 #define TRAINER_BRENDAN_ROUTE_103_MUDKIP    520
-#define TRAINER_BRENDAN_ROUTE_110_MUDKIP    521
-#define TRAINER_BRENDAN_ROUTE_119_MUDKIP    522
+#define TRAINER_BRENDAN_ROUTE_110_MUDKIP    521 //Available
+#define TRAINER_BRENDAN_ROUTE_119_MUDKIP    522 //Available
 #define TRAINER_BRENDAN_ROUTE_103_TREECKO   523
-#define TRAINER_BRENDAN_ROUTE_110_TREECKO   524
-#define TRAINER_BRENDAN_ROUTE_119_TREECKO   525
+#define TRAINER_BRENDAN_ROUTE_110           524 
+#define TRAINER_BRENDAN_ROUTE_119           525 
 #define TRAINER_BRENDAN_ROUTE_103_TORCHIC   526
-#define TRAINER_BRENDAN_ROUTE_110_TORCHIC   527
-#define TRAINER_BRENDAN_ROUTE_119_TORCHIC   528
+#define TRAINER_BRENDAN_ROUTE_110_TORCHIC   527 //Available
+#define TRAINER_BRENDAN_ROUTE_119_TORCHIC   528 //Available
 #define TRAINER_MAY_ROUTE_103_MUDKIP        529
-#define TRAINER_MAY_ROUTE_110_MUDKIP        530
-#define TRAINER_MAY_ROUTE_119_MUDKIP        531
+#define TRAINER_MAY_ROUTE_110_MUDKIP        530 //Available
+#define TRAINER_MAY_ROUTE_119_MUDKIP        531 //Available
 #define TRAINER_MAY_ROUTE_103_TREECKO       532
-#define TRAINER_MAY_ROUTE_110_TREECKO       533
-#define TRAINER_MAY_ROUTE_119_TREECKO       534
+#define TRAINER_MAY_ROUTE_110               533
+#define TRAINER_MAY_ROUTE_119               534
 #define TRAINER_MAY_ROUTE_103_TORCHIC       535
-#define TRAINER_MAY_ROUTE_110_TORCHIC       536
-#define TRAINER_MAY_ROUTE_119_TORCHIC       537
+#define TRAINER_MAY_ROUTE_110_TORCHIC       536 //Available
+#define TRAINER_MAY_ROUTE_119_TORCHIC       537 //Available
 #define TRAINER_ISAAC_1                     538
 #define TRAINER_DAVIS                       539
 #define TRAINER_MITCHELL                    540
@@ -595,15 +595,15 @@
 #define TRAINER_GRUNT_SPACE_CENTER_6        589
 #define TRAINER_GRUNT_SPACE_CENTER_7        590
 #define TRAINER_MACEY                       591
-#define TRAINER_BRENDAN_RUSTBORO_TREECKO    592
-#define TRAINER_BRENDAN_RUSTBORO_MUDKIP     593
+#define TRAINER_BRENDAN_RUSTBORO            592
+#define TRAINER_BRENDAN_RUSTBORO_MUDKIP     593 //Available
 #define TRAINER_PAXTON                      594
 #define TRAINER_ISABELLA                    595
 #define TRAINER_GRUNT_WEATHER_INST_5        596
 #define TRAINER_TABITHA_MT_CHIMNEY          597
 #define TRAINER_JONATHAN                    598
-#define TRAINER_BRENDAN_RUSTBORO_TORCHIC    599
-#define TRAINER_MAY_RUSTBORO_MUDKIP         600
+#define TRAINER_BRENDAN_RUSTBORO_TORCHIC    599 //Available
+#define TRAINER_MAY_RUSTBORO_MUDKIP         600 //Available
 #define TRAINER_MAXIE_MAGMA_HIDEOUT         601
 #define TRAINER_MAXIE_MT_CHIMNEY            602
 #define TRAINER_TIANA                       603
@@ -771,8 +771,8 @@
 #define TRAINER_MYLES                       765
 #define TRAINER_PAT                         766
 #define TRAINER_CRISTIN_1                   767
-#define TRAINER_MAY_RUSTBORO_TREECKO        768
-#define TRAINER_MAY_RUSTBORO_TORCHIC        769
+#define TRAINER_MAY_RUSTBORO                768
+#define TRAINER_MAY_RUSTBORO_TORCHIC        769 //Available
 #define TRAINER_ROXANNE_2                   770
 #define TRAINER_ROXANNE_3                   771
 #define TRAINER_ROXANNE_4                   772
