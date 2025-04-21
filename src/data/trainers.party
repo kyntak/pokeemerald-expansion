@@ -4802,15 +4802,7 @@ Items: Potion / Potion
 Double Battle: No
 AI: Basic Trainer
 
-Tyrunt @ Hard Stone
-Level: 12
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Ancient Power
-- Tackle
-- Charm
-- Rock Tomb
-
-Anorith @ Oran Berry
+Anorith @ Hard Stone
 Level: 12
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Metal Claw
@@ -4844,20 +4836,20 @@ Items: Super Potion / Super Potion
 Double Battle: No
 AI: Basic Trainer
 
-Machop
-Level: 16
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Karate Chop
-- Low Kick
-- Seismic Toss
-- Bulk Up
-
-Meditite
+Meditite 
 Level: 16
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Focus Punch
 - Light Screen
 - Reflect
+- Bulk Up
+
+Combusken @ Charcoal
+Level: 16
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Flame Charge
+- Double Kick
+- Quick Attack
 - Bulk Up
 
 Makuhita @ Sitrus Berry
