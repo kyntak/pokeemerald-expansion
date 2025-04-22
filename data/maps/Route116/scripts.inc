@@ -343,7 +343,17 @@ Route116_EventScript_Dawson::
 
 Route116_EventScript_Devan::
 	trainerbattle_single TRAINER_DEVAN, Route116_Text_DevanIntro, Route116_Text_DevanDefeat
-	msgbox Route116_Text_DevanPostBattle, MSGBOX_AUTOCLOSE
+	msgbox Route116_Text_DevanPostBattle, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, YES, Route116_EventScript_DevanRematch
+	msgbox Route116_Text_DevanDecline, MSGBOX_AUTOCLOSE
+	end
+
+	Route116_EventScript_DevanRematch::
+	cleartrainerflag TRAINER_DEVAN,
+	trainerbattle_no_intro TRAINER_DEVAN, Route116_Text_DevanDefeat
+	msgbox Route116_Text_DevanPostBattle, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, YES, Route116_EventScript_DevanRematch
+	msgbox Route116_Text_DevanDecline, MSGBOX_AUTOCLOSE
 	end
 
 Route116_EventScript_Johnson::

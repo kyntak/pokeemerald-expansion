@@ -194,6 +194,7 @@ Route103_Text_MiguelRematchDefeated:
 	.string "My darling POKéMON!$"
 
 Route103_Text_MiguelRematchPostBattle:
+Route103_Text_MiguelRematchPostBattle:
 	.string "The more I spend time with it,\n"
 	.string "the more adorable my POKéMON becomes.$"
 
@@ -564,17 +565,31 @@ Route106_Text_ElliotRematchPostBattle:
 
 Route106_Text_NedIntro:
 	.string "What do people do if they need to go\n"
-	.string "to a washroom?\p"
+	.string "to a bathroom?\p"
 	.string "What if my ROD hooks a big one while\n"
-	.string "I'm in the washroom? I just can't go…$"
+	.string "I'm in the bathroom? I just can't go…$"
 
 Route106_Text_NedDefeated:
 	.string "I lost because I'm trying to not go\n"
-	.string "to the washroom…$"
+	.string "to the bathroom…$"
 
 Route106_Text_NedPostBattle:
-	.string "Oh, no! I've got this feeling I'll hook\n"
+	.string "I caught a new fish,\n"
+	.string "Do you want to have another battle?$"
+
+	Route106_Text_NedDecline:
+	.string "Oh, ok! I've got this feeling I'll hook\n"
 	.string "a big one!$"
+
+Route106_Text_NedIntro_Rematch:
+	.string "What do people do if they need to go\n"
+	.string "to a bathroom?\p"
+	.string "What if my ROD hooks a big one while\n"
+	.string "I'm in the bathroom? I just can't go…$"
+
+Route106_Text_NedDefeated_Rematch:
+	.string "I lost because I couldn't hold it\n"
+	.string "in any more…$"
 
 Route106_Text_DouglasIntro:
 	.string "Hahahah! I'm a lousy runner, but in\n"
@@ -2183,16 +2198,17 @@ Route116_Text_ClarkPostBattle:
 	.string "To a HIKER, mountains are roads!$"
 
 Route116_Text_JoeyIntro:
-	.string "My POKéMON rule!\n"
-	.string "Check them out!$"
+	.string "My Rattata s in the top percentage\n"
+	.string "C of all Rattata! Let's Battle!$"
 
 Route116_Text_JoeyDefeat:
-	.string "Ouch! A scrape!\n"
-	.string "I have to put on a bandage!$"
+	.string "Ack! I lost again! Doggone it!$"
 
 Route116_Text_JoeyPostBattle:
-	.string "Bandages are signs of toughness!\n"
-	.string "I've got another one!$"
+	.string "Do I have to have more Pokémon in order\n"
+	.string "to battle better?\p"
+	.string "No!\n
+	.string "I'm sticking with this one no matter what!$"
 
 Route116_Text_JoseIntro:
 	.string "My BUG POKéMON are tough!\n"
@@ -2324,8 +2340,12 @@ Route116_Text_DevanDefeat:
 	.string "No contest at all!$"
 
 Route116_Text_DevanPostBattle:
-	.string "I should try different POKéMON\n"
-	.string "types, that's what I ought to do.$"
+	.string "I should try different POKéMON.\n"
+	.string "Do you want to battle again?$"
+
+	Route116_Text_DevanDecline:
+	.string "Are you sure you don't want\n"
+	.string "to be rocked hard?$"
 
 Route116_Text_JohnsonIntro:
 	.string "It's a dead end up here.\n"

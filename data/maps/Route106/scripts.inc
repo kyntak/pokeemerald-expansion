@@ -38,7 +38,17 @@ Route106_EventScript_ElliotRematch::
 
 Route106_EventScript_Ned::
 	trainerbattle_single TRAINER_NED, Route106_Text_NedIntro, Route106_Text_NedDefeated
-	msgbox Route106_Text_NedPostBattle, MSGBOX_AUTOCLOSE
+	msgbox Route106_Text_NedPostBattle, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, YES, Route106_EventScript_NedRematch
+	msgbox Route106_Text_NedDecline, MSGBOX_AUTOCLOSE
+	end
+
+Route106_EventScript_NedRematch::
+	cleartrainerflag TRAINER_NED,
+	trainerbattle_no_intro TRAINER_NED, Route106_Text_NedDefeated_Rematch
+	msgbox Route106_Text_NedPostBattle, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, YES, Route106_EventScript_NedRematch
+	msgbox Route106_Text_NedDecline, MSGBOX_AUTOCLOSE
 	end
 
 Route106_Text_TrainerTips:
