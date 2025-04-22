@@ -18,6 +18,8 @@
 #include "trig.h"
 #include "gpu_regs.h"
 #include "field_camera.h"
+#include "constants/expansion.h"
+#include "map_preview_screen.h"
 
 #define DROUGHT_COLOR_INDEX(color) ((((color) >> 1) & 0xF) | (((color) >> 2) & 0xF0) | (((color) >> 3) & 0xF00))
 
@@ -318,7 +320,10 @@ static void Task_WeatherMain(u8 taskId)
 
 static void None_Init(void)
 {
-    Weather_SetBlendCoeffs(8, 12); // Indoor shadows
+    if (EXPANSION_VERSION_MINOR >= 9 && MapHasPreviewScreen_HandleQLState2(gMapHeader.regionMapSectionId, MPS_TYPE_FADE_IN) == FALSE)
+    {
+        Weather_SetBlendCoeffs(8, 12); // Indoor shadows
+    }
     gWeatherPtr->targetColorMapIndex = 0;
     gWeatherPtr->colorMapStepDelay = 0;
 }

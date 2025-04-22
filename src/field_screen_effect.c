@@ -39,6 +39,8 @@
 #include "constants/rgb.h"
 #include "trainer_hill.h"
 #include "fldeff.h"
+//Map Previews
+#include "map_preview_screen.h"
 
 static void Task_ExitNonAnimDoor(u8);
 static void Task_ExitNonDoor(u8);
@@ -120,6 +122,9 @@ void WarpFadeOutScreen(void)
         FadeScreen(FADE_TO_BLACK, 0);
         break;
     case 1:
+        if (MapHasPreviewScreen_HandleQLState2(GetDestinationWarpMapSectionId(), MPS_TYPE_CAVE))
+        FadeScreen(FADE_TO_BLACK, 0);
+    else
         FadeScreen(FADE_TO_WHITE, 0);
     }
 }
