@@ -396,6 +396,10 @@ LittlerootTown_EventScript_TownSign::
 	msgbox LittlerootTown_Text_TownSign, MSGBOX_SIGN
 	end
 
+LittlerootTown_EventScript_AlphaSign::
+	msgbox LittlerootTown_Text_AlphaSign, MSGBOX_SIGN
+	end
+
 LittlerootTown_EventScript_BirchsLabSign::
 	msgbox LittlerootTown_Text_ProfBirchsLab, MSGBOX_SIGN
 	end
@@ -998,6 +1002,14 @@ LittlerootTown_Text_GoodLuckCatchingPokemon:
 LittlerootTown_Text_TownSign:
 	.string "LITTLEROOT TOWN\n"
 	.string "“A town that can't be shaded any hue.”$"
+
+LittlerootTown_Text_AlphaSign:
+	.string "Hi {PLAYER}!\p"
+	.string "This hack should run on mgba or 3ds\n"
+	.string "I haven't tested on anything else.\l"
+	.string "There are a lot of little changes,\n"
+	.string "with edits up to the Dewford Gym.\p"
+	.string "Let me know what you think & have fun!$"
 
 LittlerootTown_Text_ProfBirchsLab:
 	.string "PROF. BIRCH'S POKéMON LAB$"

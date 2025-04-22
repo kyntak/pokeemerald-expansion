@@ -2207,7 +2207,7 @@ Route116_Text_JoeyDefeat:
 Route116_Text_JoeyPostBattle:
 	.string "Do I have to have more Pokémon in order\n"
 	.string "to battle better?\p"
-	.string "No!\n
+	.string "No!\n"
 	.string "I'm sticking with this one no matter what!$"
 
 Route116_Text_JoseIntro:
